@@ -8,7 +8,7 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link className="header__nav-link" to="/">
+              <Link className="header__nav-link" to="/portfolio">
                 About
               </Link>
             </li>
