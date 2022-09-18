@@ -4,6 +4,10 @@
   // border: solid 1px red;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @import "./scss/variables.scss";
 @import "./scss/mixins.scss";
 @import "./scss/classes.scss";

@@ -1,5 +1,7 @@
 @import "/src/components/CardAbout/CardAbout.scss";
 
 .about {
-  padding-top: 80px;
+  // padding-top: 80px;
+  width: 100%;
+  @include flex;
 }
