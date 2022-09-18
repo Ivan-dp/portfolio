@@ -54,27 +54,18 @@
     transition: 0.5s ease-in-out;
     overflow: auto;
     position: relative;
-    // display: block;
     &.open {
       display: block;
       position: relative;
       left: 46px;
-      // @include flex(flex, column, center, center);
       opacity: 1;
       width: 410px;
       height: 505px;
       margin: 45px;
       overflow: auto;
-      // border: solid 1px $accent;
       transition: 0.5s ease-in-out;
-      // &::-webkit-scrollbar {
-      //   display: block;
-      // }
       .card-about__container {
         opacity: 1;
-        // overflow: hidden;
-        // border: solid 1px red;
-        // padding: 10px;
         margin: 10px;
         height: auto;
         width: 95%;
@@ -95,7 +86,6 @@
     border: solid 3px $divider;
   }
   &__info {
-    // margin-bottom: 45px;
     @include flex(flex, column);
     h1 {
       color: $primary-text;
@@ -127,7 +117,6 @@
     height: auto;
     display: block;
     list-style-type: none;
-    // margin-bottom: 10px;
     color: $primary-text;
   }
   &__university {
