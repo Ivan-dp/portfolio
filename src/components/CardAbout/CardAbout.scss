@@ -59,14 +59,17 @@
       display: block;
       position: relative;
       left: 46px;
-      @include flex(flex, column, center, center);
+      // @include flex(flex, column, center, center);
       opacity: 1;
-      width: 500px;
-      height: 595px;
-      padding: 45px;
+      width: 410px;
+      height: 505px;
+      margin: 45px;
       overflow: auto;
       // border: solid 1px $accent;
       transition: 0.5s ease-in-out;
+      // &::-webkit-scrollbar {
+      //   display: block;
+      // }
       .card-about__container {
         opacity: 1;
         // overflow: hidden;
