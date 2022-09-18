@@ -1,0 +1,52 @@
+.card-about {
+  @include flex(flex, row);
+  border-radius: 15px;
+  box-shadow: 10px 15px 10px 0px $divider;
+  border: solid 1px $divider;
+  transition: all 0.9s;
+  &_open {
+    width: 900px;
+    box-shadow: 10px 15px 10px 0px $divider;
+    border: solid 1px $divider;
+    border-radius: 15px;
+    transition: transform 1s;
+  }
+  &__main {
+    width: 400px;
+    height: auto;
+    @include flex(flex, column);
+  }
+  &__description {
+    width: 0;
+    p {
+      display: none;
+    }
+  }
+  &__photo {
+    margin: 45px auto;
+    width: 300px;
+    height: 300px;
+    background-image: url("./photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: solid 3px $divider;
+  }
+  &__info {
+    margin-bottom: 45px;
+    @include flex(flex, column);
+    h1 {
+      color: $primary-text;
+    }
+    h2 {
+      margin: 5px auto 30px;
+      color: $secondary-text;
+    }
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $secondary-text;
+    }
+  }
+}

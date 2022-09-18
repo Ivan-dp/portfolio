@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  @include flex;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}

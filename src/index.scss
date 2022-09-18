@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  // border: solid 1px red;
 }
 
 @import "./scss/variables.scss";
 @import "./scss/mixins.scss";
+@import "./scss/classes.scss";
+
 @import "./App.scss";
+@import "./pages/About/About.scss";
