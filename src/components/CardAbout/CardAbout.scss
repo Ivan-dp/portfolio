@@ -63,8 +63,27 @@
       width: 410px;
       height: 505px;
       margin: 45px;
-      overflow: auto;
+      // overflow: auto;
       transition: 0.5s ease-in-out;
+      // {
+      //   //   min-width: 317px;
+      //   width: 99%;
+      overflow-y: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: #eaeaea white;
+      /* для Chrome/Edge/Safari */
+      &::-webkit-scrollbar {
+        height: 61px;
+        width: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: white;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        border: 3px solid #eaeaea;
+      }
+      // }
       .card-about__container {
         opacity: 1;
         margin: 10px;
