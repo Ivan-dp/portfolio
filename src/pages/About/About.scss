@@ -1,0 +1,6 @@
+@import "/src/components/CardAbout/CardAbout.scss";
+
+.about {
+  width: 100%;
+  @include flex;
+}

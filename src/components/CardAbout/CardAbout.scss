@@ -1,0 +1,162 @@
+.card-about {
+  margin-top: 80px;
+  padding: 45px;
+  @include flex(flex, row);
+  max-width: 400px;
+  max-height: 595px;
+  border: solid 1px $divider;
+  border-radius: 15px;
+  box-shadow: 10px 15px 10px 0px $divider;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  &__main {
+    width: 310px;
+    height: auto;
+    display: none;
+    @include flex(flex, column);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -46px;
+      width: 0px;
+      height: 85%;
+      margin: 40px 0;
+      box-sizing: border-box;
+      border-right: solid 1px $divider;
+    }
+  }
+  &.open {
+    padding: 45px;
+    position: relative;
+    @include flex(flex, row, space-between);
+    max-width: 900px;
+    max-height: 595px;
+    border: solid 1px $divider;
+    border-radius: 15px;
+    box-shadow: 10px 15px 10px 0px $divider;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  &__container {
+    display: block;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+  &__description {
+    box-sizing: border-box;
+    display: block;
+    opacity: 0;
+    width: 0;
+    left: 46px;
+    height: 505px;
+    transition: 0.5s ease-in-out;
+    overflow: auto;
+    position: relative;
+    &.open {
+      display: block;
+      position: relative;
+      left: 46px;
+      opacity: 1;
+      width: 410px;
+      height: 505px;
+      margin: 45px;
+      // overflow: auto;
+      transition: 0.5s ease-in-out;
+      // {
+      //   //   min-width: 317px;
+      //   width: 99%;
+      overflow-y: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: #eaeaea white;
+      /* для Chrome/Edge/Safari */
+      &::-webkit-scrollbar {
+        height: 61px;
+        width: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: white;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        border: 3px solid #eaeaea;
+      }
+      // }
+      .card-about__container {
+        opacity: 1;
+        margin: 10px;
+        height: auto;
+        width: 95%;
+        transition: 0.5s ease-in-out 0.5s;
+      }
+    }
+  }
+
+  &__photo {
+    margin: 0px auto 45px auto;
+    width: 300px;
+    height: 300px;
+    background-image: url("./photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: solid 3px $divider;
+  }
+  &__info {
+    @include flex(flex, column);
+    h1 {
+      color: $primary-text;
+    }
+    h2 {
+      margin: 5px auto 30px;
+      color: $secondary-text;
+    }
+    a {
+      @include flex;
+      width: 60px;
+      height: 60px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $secondary-text;
+      svg {
+        transition: 0.2s ease-in-out;
+      }
+      &:hover {
+        svg {
+          width: 60px;
+          height: 60px;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  &__education {
+    height: auto;
+    display: block;
+    list-style-type: none;
+    color: $primary-text;
+  }
+  &__university {
+    height: auto;
+    display: block;
+    h3 {
+      list-style-type: none;
+      color: $primary-text;
+      margin-top: 10px;
+      margin-left: 15px;
+    }
+  }
+  &__specialty {
+    height: auto;
+    display: block;
+    p {
+      list-style-type: none;
+      margin-top: 5px;
+      margin-left: 30px;
+      color: $secondary-text;
+    }
+  }
+}

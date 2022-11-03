@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 @import "./scss/variables.scss";
 @import "./scss/mixins.scss";
+@import "./scss/classes.scss";
+
 @import "./App.scss";
+@import "./pages/About/About.scss";

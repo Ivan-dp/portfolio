@@ -1,9 +1,10 @@
 import React from "react";
+import { CardAbout } from "../../components/";
 
 const About = () => {
   return (
-    <div>
-      <h1>ABOUT PAGE</h1>
+    <div className="about">
+      <CardAbout />
     </div>
   );
 };
