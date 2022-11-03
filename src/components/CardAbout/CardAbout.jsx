@@ -36,7 +36,7 @@ const CardAbout = () => {
           </a>
         </div>
       </div>
-      <div className={className2}>
+      <div className={className2} onClick={(event) => event.stopPropagation()}>
         <div className="card-about__container">
           <ul>
             <li className="card-about__education">
