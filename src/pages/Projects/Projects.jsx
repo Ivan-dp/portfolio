@@ -1,9 +1,11 @@
 import React from "react";
+import { ProjectsSwiper } from "../../components";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="Projects">
       <h1>PROJECTS PAGE</h1>
+      <ProjectsSwiper />
     </div>
   );
 };
